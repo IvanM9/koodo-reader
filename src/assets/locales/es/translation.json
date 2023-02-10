@@ -202,7 +202,7 @@
   "Sort by Recent": "Leídos Recientemente",
   "Collapse sidebar": "Ocultar barra lateral",
   "Show sidebar": "Mostrar barra lateral",
-  "Sync": "Sincronizar",
+  "Sync": "Sincronizar con la nube",
   "Help": "Documento",
   "Feedback": "Comentarios",
   "Github Repo": "Código en GitHub",
@@ -328,5 +328,7 @@
   "Please turn off open books in the main window": "Por favor cierre los libros abiertos de la ventana principal",
   "This action will delete all the notes, bookmarks and digests of this book": "Esta acción eliminará todas las notas, marcadores y resúmenes de este libro",
   "More formats supported": "Más formatos disponibles",
-  "Koodo Reader's web version are limited by the browser, for more powerful features, please download the desktop version.": "La versión web de Koodo Reader está limitada por el navegador, para más funciones, descargue la versión de escritorio."
+  "Koodo Reader's web version are limited by the browser, for more powerful features, please download the desktop version.": "La versión web de Koodo Reader está limitada por el navegador, para más funciones, descargue la versión de escritorio.",
+  "Appearance": "Aspecto",   "Use first page as PDF cover": "Usar la primera página como portada del PDF",
+  "Open url with built-in browser": "Abrir url con navegador incorporador"
 }

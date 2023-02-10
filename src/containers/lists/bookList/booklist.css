@@ -21,7 +21,7 @@
   width: 150px;
   border: 2px solid rgb(231, 69, 69);
   text-align: center;
-  height: 30px;
+  height: auto;
   line-height: 30px;
   color: rgb(231, 69, 69);
   cursor: pointer;

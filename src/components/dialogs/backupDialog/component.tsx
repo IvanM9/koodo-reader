@@ -260,6 +260,7 @@ class BackupDialog extends React.Component<
               }
               onClick={() => {
                 this.setState({ isBackup: "yes" });
+                this.setState({ currentStep: 1 });
               }}
             >
               <span className="icon-backup"></span>
@@ -285,6 +286,7 @@ class BackupDialog extends React.Component<
                   return;
                 }
                 this.setState({ isBackup: "no" });
+                this.setState({ currentStep: 1 });
               }}
             >
               <span className="icon-restore"></span>

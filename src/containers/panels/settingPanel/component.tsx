@@ -14,6 +14,7 @@ class SettingPanel extends React.Component<
   SettingPanelProps,
   SettingPanelState
 > {
+  active: number;
   constructor(props: SettingPanelProps) {
     super(props);
     this.state = {
@@ -21,6 +22,8 @@ class SettingPanel extends React.Component<
       isSettingLocked:
         StorageUtil.getReaderConfig("isSettingLocked") === "yes" ? true : false,
     };
+    this.active = 0;
+
   }
 
   handleLock = () => {
@@ -32,11 +35,13 @@ class SettingPanel extends React.Component<
     });
   };
 
+
+
   render() {
     return (
       <div className="setting-panel-parent">
         <Tooltip
-          title={this.props.t(this.state.isSettingLocked ? "Unlock" : "Lock")}
+          title={this.props.t(this.state.isSettingLocked ? "Lock" : "Unlock")}
           position="bottom"
           trigger="mouseenter"
           style={{ height: "30px", display: "inline-block", float: "left" }}
@@ -56,6 +61,25 @@ class SettingPanel extends React.Component<
           <Trans>Reading Option</Trans>
         </div>
         <div className="setting-panel">
+          // TODO: Agrupar por categorías
+          {/* <div className="accordion">
+            <div className={this.active == 1 ? "container active" : "container"}>
+              <div className="label">
+                <a onClick={() => { this.active = this.active == 0 ? 1 : 0 }}>
+                Modo de control 
+                </a>
+                </div>
+              <div className="content">
+                <ModeControl />
+              </div>
+            </div>
+            <div className={this.active == 2 ? "container active" : "container"} onClick={() => { this.active = this.active == 0 ? 2 : 0 }}>
+              <div className="label">Tema</div>
+              <div className="content">
+                <ThemeList />
+              </div>
+            </div>
+          </div> */}
           <ModeControl />
           <ThemeList />
           <SliderList
