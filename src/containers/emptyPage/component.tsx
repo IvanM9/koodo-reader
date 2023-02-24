@@ -38,7 +38,7 @@ class EmptyPage extends React.Component<EmptyPageProps, EmptyPageState> {
       >
         <div
           className="empty-illustration-container"
-          style={{ width: "calc(100% - 50px)" }}
+          style={{ width: "calc(100% - 50px)", textAlign:"center" }}
         >
           <img
             src={
@@ -46,7 +46,7 @@ class EmptyPage extends React.Component<EmptyPageProps, EmptyPageState> {
               (StorageUtil.getReaderConfig("appSkin") === "system" &&
                 StorageUtil.getReaderConfig("isOSNight") === "yes")
                 ? "./assets/empty_light.svg"
-                : "./assets/empty.svg"
+                : "./assets/empty2.jpeg"
             }
             alt=""
             className="empty-page-illustration"

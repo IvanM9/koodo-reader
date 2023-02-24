@@ -26,7 +26,7 @@ export const initTheme = () => {
   ) {
     style.href = "./assets/styles/dark.css";
   } else {
-    style.href = "./assets/styles/default.css";
+    style.href = "./assets/styles/green.css";
   }
   document.head.appendChild(style);
 };

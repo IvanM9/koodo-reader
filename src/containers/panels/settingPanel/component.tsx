@@ -61,7 +61,6 @@ class SettingPanel extends React.Component<
           <Trans>Reading Option</Trans>
         </div>
         <div className="setting-panel">
-          // TODO: Agrupar por categorías
           {/* <div className="accordion">
             <div className={this.active == 1 ? "container active" : "container"}>
               <div className="label">

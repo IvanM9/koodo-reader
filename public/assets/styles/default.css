@@ -238,7 +238,7 @@ textarea::-ms-input-placeholder,
 .icon-popup,
 .delete-dialog-uncheck-icon,
 .book-bookmark-link {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(97, 54, 238);
 }
 .book-content-name,
 .book-subcontent-name,
@@ -246,4 +246,7 @@ textarea::-ms-input-placeholder,
 .nav-search-list-item,
 .sort-dialog-seperator {
   border-bottom: 1px solid rgba(75, 75, 75, 0.1);
+}
+.manager {
+  background-color:rgb(243, 243, 234);
 }
