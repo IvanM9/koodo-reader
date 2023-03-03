@@ -192,6 +192,7 @@ class SettingDialog extends React.Component<
     this.setState({ currentThemeIndex: index });
     StorageUtil.setReaderConfig("themeColor", name);
     if (isElectron) {
+      window.location.reload();
       toast(this.props.t("Try refresh or restart"));
     } else {
       window.location.reload();

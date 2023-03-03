@@ -19,6 +19,7 @@ class ModeControl extends React.Component<ModeControlProps, ModeControlState> {
     this.setState({ readerMode: mode });
     StorageUtil.setReaderConfig("readerMode", mode);
     if (isElectron) {
+      window.location.reload();
       toast(this.props.t("Take effect at next startup"));
     } else {
       window.location.reload();

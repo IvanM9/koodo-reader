@@ -50,6 +50,9 @@ class BackupDialog extends React.Component<
     let result = await restore(event.target.files[0]);
     if (result) {
       this.handleFinish();
+      if (this.props.books.length==0) {
+        alert("Libro en la papelera")
+      }
     }
   };
   showMessage = (message: string) => {
