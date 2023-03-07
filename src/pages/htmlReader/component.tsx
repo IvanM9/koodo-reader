@@ -338,7 +338,7 @@ class Reader extends React.Component<ReaderProps, ReaderState> {
               ? {
               }
               : {
-                //transform: "translateY(-110px)",
+                transform: "translateY(-110px)",
               }
           }
         >

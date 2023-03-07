@@ -35,6 +35,7 @@
     "underscore": "^1.11.0",
     "webdav": "^3.6.2",
     "webdav-fs": "^3.0.0",
+    "yarn": "^1.22.19",
     "zip-a-folder": "^0.0.12"
   },
   "devDependencies": {
